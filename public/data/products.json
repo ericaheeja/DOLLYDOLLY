@@ -1,17 +1,274 @@
-[
-  {
-    "name": "puppy",
-    "price": "$50",
-    "id": "1"
-  },
-  {
-    "name": "bear",
-    "price": "$50",
-    "id": "2"
-  },
-  {
-    "name": "cats",
-    "price": "$20",
-    "id": "3"
+{
+  "products": {
+    "product-001": {
+      "category": "dolls",
+      "description": "손발바닥이 브라운으로 되어있는 브라운 컬러의 테디베어",
+      "id": "product-001",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452727/dollydolly/bear_01_cgtv1a.jpg",
+      "color": "brown",
+      "price": 10000,
+      "title": "손발바닥 브라운 테디베어"
+    },
+    "product-002": {
+      "category": "dolls",
+      "description": "손에 빨간색 발바닥이 그려져있는 라이트 브라운 컬러의 테디베어",
+      "id": "product-002",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452728/dollydolly/bear_02_zixers.jpg",
+      "color": "brown",
+      "price": 15000,
+      "title": "빨간색 발바닥 라이트 브라운 테디베어"
+    },
+    "product-003": {
+      "category": "dolls",
+      "description": "손에 빨간색 발바닥이 그려져있는 짙은 브라운 컬러의 테디베어",
+      "id": "product-003",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452729/dollydolly/bear_03_zqwzo4.jpg",
+      "color": "brown",
+      "price": 15000,
+      "title": "빨간색 발바닥 짙은 브라운 테디베어"
+    },
+    "product-004": {
+      "category": "dolls",
+      "description": "손에 빨간색 발바닥이 그려져있는 다크 브라운 컬러의 테디베어",
+      "id": "product-004",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452729/dollydolly/bear_04_obioiw.jpg",
+      "color": "brown",
+      "price": 15000,
+      "title": "빨간색 발바닥 다크 브라운 테디베어"
+    },
+    "product-005": {
+      "category": "dolls",
+      "description": "손에 발바닥이 그려져있는 핑크 컬러의 테디베어",
+      "id": "product-005",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452730/dollydolly/bear_05_ezkqxu.jpg",
+      "color": "pink",
+      "price": 20000,
+      "title": "발바닥 핑크 테디베어"
+    },
+    "product-006": {
+      "category": "dolls",
+      "description": "손에 발바닥이 그려져있는 골드 브라운 컬러의 테디베어",
+      "id": "product-006",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452730/dollydolly/bear_06_ulwiqo.jpg",
+      "color": "brown",
+      "price": 20000,
+      "title": "발바닥 골드 브라운 테디베어"
+    },
+    "product-007": {
+      "category": "dolls",
+      "description": "손에 브라운 발바닥이 그려져있는 브라운 컬러의 테디베어",
+      "id": "product-007",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452731/dollydolly/bear_07_sqpkyb.jpg",
+      "color": "brown",
+      "price": 18000,
+      "title": "브라운 발바닥 브라운 테디베어"
+    },
+    "product-008": {
+      "category": "dolls",
+      "description": "발바닥이 그려져있는 옐로우 컬러의 테디베어",
+      "id": "product-008",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452732/dollydolly/bear_08_igwfcf.jpg",
+      "color": "yellow",
+      "price": 20000,
+      "title": "발바닥 옐로우 테디베어"
+    },
+    "product-009": {
+      "category": "dolls",
+      "description": "뿔이 있는 짙은 핑크 컬러의 테디베어",
+      "id": "product-009",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452732/dollydolly/bear_09_vseox2.jpg",
+      "color": "pink",
+      "price": 20000,
+      "title": "뿔 핑크 테디베어"
+    },
+    "product-010": {
+      "category": "dolls",
+      "description": "발바닥이 그려져있는 화이트 컬러의 테디베어",
+      "id": "product-010",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452733/dollydolly/bear_10_ak9iqh.jpg",
+      "color": "white",
+      "price": 20000,
+      "title": "발바닥 화이트 테디베어"
+    },
+    "product-011": {
+      "category": "clothes",
+      "description": "LOVE YOU MORE 글자가 새겨진 레드 컬러의 티셔츠",
+      "id": "product-011",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452733/dollydolly/clothes_01_tiallm.jpg",
+      "color": "red",
+      "price": 8000,
+      "title": "LOVE YOU MORE 레드 티셔츠"
+    },
+    "product-012": {
+      "category": "clothes",
+      "description": "HAPPY VALENTINE'S DAY 글자가 새겨진 블랙 컬러의 티셔츠",
+      "id": "product-012",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452734/dollydolly/clothes_02_ivtg6e.jpg",
+      "color": "black",
+      "price": 10000,
+      "title": "HAPPY VALENTINE'S DAY 블랙 티셔츠"
+    },
+    "product-013": {
+      "category": "clothes",
+      "description": "LOVE YOU 글자가 새겨진 화이트 컬러의 티셔츠",
+      "id": "product-013",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452734/dollydolly/clothes_03_ognx4w.jpg",
+      "color": "white",
+      "price": 8000,
+      "title": "LOVE YOU 화이트 티셔츠"
+    },
+    "product-014": {
+      "category": "clothes",
+      "description": "HUGS 글자가 새겨진 레드 컬러의 후드",
+      "id": "product-014",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452735/dollydolly/clothes_04_y2p5cd.jpg",
+      "color": "red",
+      "price": 18000,
+      "title": "HUGS 레드 후드"
+    },
+    "product-015": {
+      "category": "clothes",
+      "description": "donut & coffee가 그려진 핑크 컬러의 티셔츠",
+      "id": "product-015",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452720/dollydolly/clothes_05_g0fpqz.jpg",
+      "color": "pink",
+      "price": 12000,
+      "title": "donut & coffee 핑크 티셔츠"
+    },
+    "product-016": {
+      "category": "clothes",
+      "description": "I LOVE MOOO 글자가 새겨진 화이트 컬러의 티셔츠",
+      "id": "product-016",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452720/dollydolly/clothes_06_j7ck1u.jpg",
+      "color": "white",
+      "price": 10000,
+      "title": "I LOVE MOOO 화이트 티셔츠"
+    },
+    "product-017": {
+      "category": "clothes",
+      "description": "burger & fries가 그려진 화이트 컬러의 티셔츠",
+      "id": "product-017",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452721/dollydolly/clothes_07_x0zivv.jpg",
+      "color": "white",
+      "price": 10000,
+      "title": "burger & fries 화이트 티셔츠"
+    },
+    "product-018": {
+      "category": "clothes",
+      "description": "PB & J 글자가 새겨진 화이트 컬러의 티셔츠",
+      "id": "product-018",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452721/dollydolly/clothes_08_lpo4ka.jpg",
+      "color": "white",
+      "price": 10000,
+      "title": "PB & J 화이트 티셔츠"
+    },
+    "product-019": {
+      "category": "clothes",
+      "description": "YOU MAKE TA DAY GREAT 글자가 새겨진 화이트 컬러의 티셔츠",
+      "id": "product-019",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452734/dollydolly/clothes_02_ivtg6e.jpg",
+      "color": "white",
+      "price": 11000,
+      "title": "YOU MAKE TA DAY GREAT 화이트 티셔츠"
+    },
+    "product-020": {
+      "category": "clothes",
+      "description": "HAPPY BIRTHDAY 글자가 새겨진 핑크 컬러의 티셔츠",
+      "id": "product-020",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452722/dollydolly/clothes_10_fn2oai.jpg",
+      "color": "pink",
+      "price": 12000,
+      "title": "HAPPY BIRTHDAY 핑크 티셔츠"
+    },
+    "product-021": {
+      "category": "accessaries",
+      "description": "레드 컬러의 LOVE 아이마스크",
+      "id": "product-021",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452722/dollydolly/acc_01_eyemask_rkedc5.jpg",
+      "color": "pink",
+      "price": 6000,
+      "title": "레드 아이마스크"
+    },
+    "product-022": {
+      "category": "accessaries",
+      "description": "블랙 컬러의 뿔테 안경",
+      "id": "product-022",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452723/dollydolly/acc_02_glasses_xebeq9.jpg",
+      "color": "black",
+      "price": 8000,
+      "title": "블랙 뿔테 안경"
+    },
+    "product-023": {
+      "category": "accessaries",
+      "description": "블랙 컬러의 선글라스",
+      "id": "product-023",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452723/dollydolly/acc_03_sunglasses_e3wj1y.jpg",
+      "color": "black",
+      "price": 9000,
+      "title": "블랙 선글라스"
+    },
+    "product-024": {
+      "category": "accessaries",
+      "description": "핑크 컬러의 선글라스",
+      "id": "product-024",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452724/dollydolly/acc_06_pinkglasses_mmeoj2.jpg",
+      "color": "pink",
+      "price": 9000,
+      "title": "핑크 선글라스"
+    },
+    "product-025": {
+      "category": "accessaries",
+      "description": "핑크 컬러의 HAPPY BIRTHDAY 머리띠",
+      "id": "product-025",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452725/dollydolly/acc_07_pinkheadband_sna3rv.jpg",
+      "color": "pink",
+      "price": 8000,
+      "title": "핑크 HAPPY BIRTHDAY 머리띠"
+    },
+    "product-026": {
+      "category": "accessaries",
+      "description": "블랙 컬러의 스니커즈",
+      "id": "product-026",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452724/dollydolly/acc_04_shoes_vg0phf.jpg",
+      "color": "black",
+      "price": 13000,
+      "title": "블랙 스니커즈"
+    },
+    "product-027": {
+      "category": "accessaries",
+      "description": "레드 컬러의 스니커즈",
+      "id": "product-027",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452725/dollydolly/acc_05_shoes_uu0jsv.jpg",
+      "color": "red",
+      "price": 13000,
+      "title": "레드 스니커즈"
+    },
+    "product-028": {
+      "category": "accessaries",
+      "description": "그린 컬러의 스카프",
+      "id": "product-028",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452726/dollydolly/acc_08_greenscarf_geeevb.jpg",
+      "color": "green",
+      "price": 14000,
+      "title": "그린 스카프"
+    },
+    "product-029": {
+      "category": "accessaries",
+      "description": "블루 컬러의 스카프",
+      "id": "product-029",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452726/dollydolly/acc_09_bluescarf_wjdrrh.jpg",
+      "color": "blue",
+      "price": 14000,
+      "title": "블루 스카프"
+    },
+    "product-030": {
+      "category": "accessaries",
+      "description": "옐로우 컬러의 스카프",
+      "id": "product-030",
+      "image": "https://res.cloudinary.com/dwdjiwoi4/image/upload/v1705452727/dollydolly/acc_10_yellowscarf_yctfdd.jpg",
+      "color": "yellow",
+      "price": 14000,
+      "title": "옐로우 스카프"
+    }
   }
-]
+}

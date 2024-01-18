@@ -28,6 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@firebase/app", "npm:0.9.25"],\
+            ["@tanstack/react-query", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:5.17.15"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:13.5.0"],\
@@ -3638,7 +3640,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@firebase/logger", "npm:0.4.0"],\
             ["@firebase/util", "npm:1.9.3"],\
             ["@firebase/webchannel-wrapper", "npm:0.10.5"],\
-            ["@grpc/grpc-js", "npm:1.9.13"],\
+            ["@grpc/grpc-js", "npm:1.9.14"],\
             ["@grpc/proto-loader", "npm:0.7.10"],\
             ["@types/firebase__app", null],\
             ["tslib", "npm:2.6.2"],\
@@ -3659,7 +3661,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@firebase/logger", "npm:0.4.0"],\
             ["@firebase/util", "npm:1.9.3"],\
             ["@firebase/webchannel-wrapper", "npm:0.10.5"],\
-            ["@grpc/grpc-js", "npm:1.9.13"],\
+            ["@grpc/grpc-js", "npm:1.9.14"],\
             ["@grpc/proto-loader", "npm:0.7.10"],\
             ["@types/firebase__app", null],\
             ["tslib", "npm:2.6.2"],\
@@ -4283,12 +4285,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@grpc/grpc-js", [\
-        ["npm:1.9.13", {\
-          "packageLocation": "./.yarn/cache/@grpc-grpc-js-npm-1.9.13-33f9b49e10-0d11fefb52.zip/node_modules/@grpc/grpc-js/",\
+        ["npm:1.9.14", {\
+          "packageLocation": "./.yarn/cache/@grpc-grpc-js-npm-1.9.14-1b54c486cb-1e0821876f.zip/node_modules/@grpc/grpc-js/",\
           "packageDependencies": [\
-            ["@grpc/grpc-js", "npm:1.9.13"],\
+            ["@grpc/grpc-js", "npm:1.9.14"],\
             ["@grpc/proto-loader", "npm:0.7.10"],\
-            ["@types/node", "npm:20.10.8"]\
+            ["@types/node", "npm:20.11.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4300,7 +4302,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@grpc/proto-loader", "npm:0.7.10"],\
             ["lodash.camelcase", "npm:4.3.0"],\
             ["long", "npm:5.2.3"],\
-            ["protobufjs", "npm:7.2.5"],\
+            ["protobufjs", "npm:7.2.6"],\
             ["yargs", "npm:17.7.2"]\
           ],\
           "linkType": "HARD"\
@@ -5314,6 +5316,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@tanstack/query-core", [\
+        ["npm:5.17.15", {\
+          "packageLocation": "./.yarn/cache/@tanstack-query-core-npm-5.17.15-2f8a2ca5ca-58ee2b4233.zip/node_modules/@tanstack/query-core/",\
+          "packageDependencies": [\
+            ["@tanstack/query-core", "npm:5.17.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tanstack/react-query", [\
+        ["npm:5.17.15", {\
+          "packageLocation": "./.yarn/cache/@tanstack-react-query-npm-5.17.15-a12de92c66-b48587f176.zip/node_modules/@tanstack/react-query/",\
+          "packageDependencies": [\
+            ["@tanstack/react-query", "npm:5.17.15"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:5.17.15", {\
+          "packageLocation": "./.yarn/__virtual__/@tanstack-react-query-virtual-f49784eb9b/0/cache/@tanstack-react-query-npm-5.17.15-a12de92c66-b48587f176.zip/node_modules/@tanstack/react-query/",\
+          "packageDependencies": [\
+            ["@tanstack/react-query", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:5.17.15"],\
+            ["@tanstack/query-core", "npm:5.17.15"],\
+            ["@types/react", null],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@testing-library/dom", [\
         ["npm:8.18.1", {\
           "packageLocation": "./.yarn/cache/@testing-library-dom-npm-8.18.1-59f24b2394-432a7da2bb.zip/node_modules/@testing-library/dom/",\
@@ -5694,10 +5728,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:20.10.8", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.10.8-99e3cc8ac5-ce9b7ee545.zip/node_modules/@types/node/",\
+        ["npm:20.11.5", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.11.5-b807d46a1a-a542727de1.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.10.8"],\
+            ["@types/node", "npm:20.11.5"],\
             ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
@@ -7218,6 +7252,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["basic", "workspace:."],\
+            ["@firebase/app", "npm:0.9.25"],\
+            ["@tanstack/react-query", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:5.17.15"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:a2eb9c761d3f2f5a54785dc48f11530f742a085568a27278c10fafea0fc3c68c6919310052dd90eb9943c50beb3ee043cac359438a44933b56bfcdf611a63aca#npm:13.5.0"],\
@@ -15698,10 +15734,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["protobufjs", [\
-        ["npm:7.2.5", {\
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.2.5-3439c554a5/node_modules/protobufjs/",\
+        ["npm:7.2.6", {\
+          "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.2.6-4bb38caa1d/node_modules/protobufjs/",\
           "packageDependencies": [\
-            ["protobufjs", "npm:7.2.5"],\
+            ["protobufjs", "npm:7.2.6"],\
             ["@protobufjs/aspromise", "npm:1.1.2"],\
             ["@protobufjs/base64", "npm:1.1.2"],\
             ["@protobufjs/codegen", "npm:2.0.4"],\
@@ -15712,7 +15748,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protobufjs/path", "npm:1.1.2"],\
             ["@protobufjs/pool", "npm:1.1.0"],\
             ["@protobufjs/utf8", "npm:1.1.0"],\
-            ["@types/node", "npm:20.10.8"],\
+            ["@types/node", "npm:20.11.5"],\
             ["long", "npm:5.2.3"]\
           ],\
           "linkType": "HARD"\
