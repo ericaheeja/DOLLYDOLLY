@@ -3,12 +3,13 @@ import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "../api/firebase";
 import ProductCard from "../components/ProductCard";
 
-function Products() {
+function Products({ keyword }) {
   const {
     isLoading,
     error,
     data: products,
-  } = useQuery({ queryKey: ["products"], queryFn: () => getProducts() });
+  } = useQuery({ queryKey: ["products"], queryFn: async () => getProducts() });
+
   return (
     <>
       {isLoading && <p>Loading...</p>}
