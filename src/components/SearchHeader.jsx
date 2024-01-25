@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BsSearch } from "react-icons/bs";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function SearchHeader() {
-  const { keyword } = useParams();
+function SearchHeader({ text, updateText, keyword }) {
   const navigate = useNavigate();
-  const [text, setText] = useState("");
+  // const [text, setText] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/products/${text}`);
+    navigate(keyword !== undefined ? `/products/${keyword}/${text}` : `/products/${text}`);
   };
 
-  // useEffect(() => setText(keyword || ""), [keyword]);
+  // useEffect(() => console.log(), [text]);
 
   return (
     <div className="w-full flex p-4 text-2xl border-b border-zinc-600 mb-4">
@@ -21,7 +20,7 @@ function SearchHeader() {
           type="text"
           placeholder="Search..."
           value={text}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => updateText(e.target.value)}
         />
         <button className="px-4">
           <BsSearch />
