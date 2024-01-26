@@ -35,6 +35,7 @@ function Products() {
   const filterColorAndPrice = (product) => {
     for (const [key, value] of Object.entries(check)) {
       if (product.color === key && value) {
+        console.log(product);
         return product;
       } else {
         return product;
