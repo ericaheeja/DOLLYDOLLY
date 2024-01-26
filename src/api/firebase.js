@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getDatabase, get, ref } from "firebase/database";
+import { getDatabase, get, ref, set, remove } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -25,6 +25,21 @@ export async function getProducts() {
     }
     return [];
   });
+}
+
+export async function getWishlist() {
+  return get(ref(database, `wishlist`)).then((snapshot) => {
+    const items = snapshot.val() || {};
+    return Object.values(items);
+  });
+}
+
+export async function addToWishlist(product) {
+  return set(ref(database, `wishlist/${product.id}`), product);
+}
+
+export async function removeFromWishlist(productId) {
+  return remove(ref(database, `wishlist/${productId}`));
 }
 
 export { app, auth, provider };
