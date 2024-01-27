@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "../api/firebase";
 import ProductCard from "../components/ProductCard";
@@ -29,26 +29,25 @@ function Products() {
   };
   const updateCheck = (check) => {
     setCheck(check);
-    console.log(check);
   };
 
-  const filterColorAndPrice = (product) => {
-    for (const [key, value] of Object.entries(check)) {
-      if (product.color === key && value) {
-        console.log(product);
-        return product;
-      } else {
-        return product;
-      }
+  const filterProducts = (product) => {
+    const { color, price } = product;
+    const { brown, pink, red, low, medium, high } = check;
+    if (text !== "" && !product.description.includes(text)) {
+      return false;
     }
-  };
-
-  const filterProduct = (product) => {
-    if (text === "") {
-      return filterColorAndPrice(product);
-    } else {
-      return product.description.includes(text);
+    if ((brown && color !== "brown") || (pink && color !== "pink") || (red && color !== "red")) {
+      return false;
     }
+    if (
+      (low && price >= 10000) ||
+      (medium && (price < 10000 || price >= 15000)) ||
+      (high && price < 15000)
+    ) {
+      return false;
+    }
+    return true;
   };
 
   return (
@@ -66,9 +65,7 @@ function Products() {
       <ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">
         {products &&
           products
-            .filter((product) => {
-              return filterProduct(product);
-            })
+            .filter((product) => filterProducts(product))
             .map((product) => {
               return <ProductCard key={product.id} product={product} />;
             })}

@@ -1,17 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsSearch } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
 
 function SearchHeader({ text, updateText, container, updateContainer, check, updateCheck }) {
-  const navigate = useNavigate();
-  // const [text, setText] = useState("");
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   navigate(keyword !== undefined ? `/products/${keyword}/${text}` : `/products/${text}`);
-  // };
-
-  // useEffect(() => console.log(), [text]);
-
   const handleChanage = (e) => {
     if (e.target.checked) {
       updateCheck({ ...check, [e.target.value]: e.target.checked });
