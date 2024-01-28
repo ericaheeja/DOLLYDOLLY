@@ -4,7 +4,7 @@ import { getProducts } from "../api/firebase";
 import ProductCard from "../components/ProductCard";
 import SearchHeader from "../components/SearchHeader";
 
-function Products() {
+function Products({ keyword }) {
   const {
     isLoading,
     error,
@@ -50,6 +50,55 @@ function Products() {
     return true;
   };
 
+  const collectDolls = (product) => {
+    if (product.category === "dolls") {
+      return <ProductCard key={product.id} product={product} />;
+    }
+  };
+
+  const collectClothes = (product) => {
+    if (product.category === "clothes") {
+      return <ProductCard key={product.id} product={product} />;
+    }
+  };
+
+  const collectAccessaries = (product) => {
+    if (product.category === "accessaries") {
+      return <ProductCard key={product.id} product={product} />;
+    }
+  };
+
+  const currentPage = (products) => {
+    if (products && keyword === "dolls") {
+      return products
+        .filter((product) => filterProducts(product))
+        .map((product) => {
+          return collectDolls(product);
+        });
+    } else if (products && keyword === "clothes") {
+      return products
+        .filter((product) => filterProducts(product))
+        .map((product) => {
+          return collectClothes(product);
+        });
+    } else if (products && keyword === "accessaries") {
+      return products
+        .filter((product) => filterProducts(product))
+        .map((product) => {
+          return collectAccessaries(product);
+        });
+    } else {
+      return (
+        products &&
+        products
+          .filter((product) => filterProducts(product))
+          .map((product) => {
+            return <ProductCard key={product.id} product={product} />;
+          })
+      );
+    }
+  };
+
   return (
     <>
       <SearchHeader
@@ -63,12 +112,7 @@ function Products() {
       {isLoading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       <ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">
-        {products &&
-          products
-            .filter((product) => filterProducts(product))
-            .map((product) => {
-              return <ProductCard key={product.id} product={product} />;
-            })}
+        {currentPage(products)}
       </ul>
     </>
   );
