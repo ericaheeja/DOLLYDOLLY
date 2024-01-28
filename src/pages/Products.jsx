@@ -50,42 +50,28 @@ function Products({ keyword }) {
     return true;
   };
 
-  const collectDolls = (product) => {
-    if (product.category === "dolls") {
-      return <ProductCard key={product.id} product={product} />;
-    }
-  };
-
-  const collectClothes = (product) => {
-    if (product.category === "clothes") {
-      return <ProductCard key={product.id} product={product} />;
-    }
-  };
-
-  const collectAccessaries = (product) => {
-    if (product.category === "accessaries") {
-      return <ProductCard key={product.id} product={product} />;
-    }
-  };
-
   const currentPage = (products) => {
     if (products && keyword === "dolls") {
       return products
         .filter((product) => filterProducts(product))
         .map((product) => {
-          return collectDolls(product);
+          return product.category === "dolls" && <ProductCard key={product.id} product={product} />;
         });
     } else if (products && keyword === "clothes") {
       return products
         .filter((product) => filterProducts(product))
         .map((product) => {
-          return collectClothes(product);
+          return (
+            product.category === "clothes" && <ProductCard key={product.id} product={product} />
+          );
         });
     } else if (products && keyword === "accessaries") {
       return products
         .filter((product) => filterProducts(product))
         .map((product) => {
-          return collectAccessaries(product);
+          return (
+            product.category === "accessaries" && <ProductCard key={product.id} product={product} />
+          );
         });
     } else {
       return (
